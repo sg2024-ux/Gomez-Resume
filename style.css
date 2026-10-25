@@ -96,7 +96,7 @@ h3{
   margin-bottom: 0.4rem;
 }
 
-/7. Contact section*/
+/*7. Contact section*/
 #contact{
   border-left: 4px sold #1e3a8a;
 }
@@ -114,7 +114,7 @@ footer{
     width: 92%;
     gap: 1rem;
   }
-  main>section:first-child{
+  main > section:first-child{
     grid-column: auto;
   }
   header{
