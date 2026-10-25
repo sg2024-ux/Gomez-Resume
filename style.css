@@ -23,12 +23,12 @@ h1{
 }
 h2{
   color: #1e3a8a;
-  font-sizing: 1.5rem;
+  font-size: 1.5rem;
 }
 /*3. Navigation */
 nav{
   background-color: #222222;
-  padding: 1rem
+  padding: 1rem;
   text-align: center;
 }
 nav a{
@@ -45,7 +45,7 @@ nav a:focus{
 }
 /*4. Main content and sections */
 main{
-  width: 90%
+  width: 90%;
   max-width: 900px;
   margin:1.5rem auto;
 }
@@ -61,7 +61,7 @@ section{
 }
 .profile-photo{
   width: 180px;
-  max-width: 100%
+  max-width: 100%;
   height: auto;
   border: 2px solid white;
 }
