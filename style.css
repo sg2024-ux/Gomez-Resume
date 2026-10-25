@@ -31,16 +31,21 @@ h1{
 /*4. Navigation */
 nav{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
   background-color: #222222;
-  padding: 1rem;
+  padding: 16px;
+  margin: 0;
 }
 nav a{
+  display: inline-block;
   color: white;
-  padding: 0.4rem 0.7rem;
+  padding: 8px 12px;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -124,10 +129,11 @@ footer{
     font-size: 1.75rem;
   }
 }
-/* 10. Responsive design*/
+/* 10. Responsive design: phones*/
 @media (max-width: 480px) {
   nav{
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
   }
   nav a{
