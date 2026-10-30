@@ -44,7 +44,93 @@ nav{
   margin: 0;
   background-color: #222222;
 }
-
+nav a{
+  display: inline-block;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+nav a:hover {
+  color: #222222
+  background-color: #93c5fd;
+}
+nav a:focus {
+  outline: 2px solid #facc15;
+  outline-offset: 3px;
+}
+/*5. Main content: Css Grid */
+main{
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+main > section:first-child{
+  min-width: 0;
+  padding:1.25rem;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+main > section: first-child{
+  grid-column: 1/ -1;
+}
+h2{
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+h3{
+  margin-bottom: 0.25rem;
+}
+/* 6. Class selectors*/
+.intro{
+  font-size: 1.125rem;
+}
+.skills{
+  background-color: #f8fafc;
+}
+.skills ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+  list-style: none;
+}
+.skills li{
+  padding: 8px 12px;
+  margin: 0;
+  background-color: #e6edf5;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+/*7. CSS Gris*/
+#projects{
+  grid-column: 1 / -1
+}
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(120px, auto);
+  gap: 20px;
+}
+.project{
+  min-width: 0;
+  padding: 20px;
+  background-color: #e6edf5;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+.project.features{
+  grid-column: span 2;
+}
 /*8. Contact section*/
 #contact{
   border-left: 4px sold #1e3a8a;
