@@ -133,7 +133,43 @@ h3{
 }
 /*8. Contact section*/
 #contact{
+  grid-column:1/-1;
   border-left: 4px sold #1e3a8a;
+}
+#contact form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+#contact input,
+#contact select,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font: inherit;
+}
+#contact button{
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#contact button:hover{
+  background-color: #14275c;
+}
+#contact input:focus-visible,
+#contact select:focus-visible,
+#contact textarea:focus-visible,
+#contact button:focus-visible{
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
 }
 /*9. Footer*/
 footer{
