@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Contact Information</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Contact Information</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Sinai Gomez</h1>
-<p>Computer Science Student</p>
+  <header>
+    <h1>Sinai Gomez</h1>
+    <p>Computer Science Student</p>
 </header>
 <nav>
 <a href="index.html">Home</a>
@@ -17,11 +17,41 @@
 <a href="contact.html">Contact</a>
 </nav>
 <main>
-<section id="contact">
-<h2>Contact Information</h2>
-<p>Name: Sinai Gomez</p>
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p>Name: Sinai Gomez</p>
 <p>Email: sinai.gomez@example.com</p>
 <p>Phone: (123) 456-7890</p>
+    <h2>Contact Me</h2>
+    <p>Have a question? Send me a message.</p>
+    <form onsubmit="event.preventDefault()">
+      <label for="name">Your Name:*</label>
+      <input 
+        type="email"
+        id="email"
+        name="email"
+        placeholder="123@example.com"
+        required
+      >
+      <label for="subject">Reason for contacting:</label>
+      <select id="subject" name="subject">
+        <option value="general">General question</option>
+        <option value="project">Project collaboration</option>
+        <option value="feedback">Feedback</option>
+      </select>
+      <label for="message">Your Message:*</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        minlength="10"
+        maxlength="500"
+        placeholder="Write your message here..."
+        required
+        ></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
 </section>
 </main>
 <footer>
